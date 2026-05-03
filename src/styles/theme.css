@@ -1,0 +1,231 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+
+  /* DineEase Brand Colors */
+  --primary: #D7263D;
+  --primary-foreground: #FAF7F2;
+  --secondary: #1B2A41;
+  --secondary-foreground: #FAF7F2;
+  --accent: #F4A261;
+  --accent-foreground: #1B2A41;
+
+  /* Backgrounds */
+  --background: #FAF7F2;
+  --foreground: #1B2A41;
+  --card: #FFFFFF;
+  --card-foreground: #1B2A41;
+  --popover: #FFFFFF;
+  --popover-foreground: #1B2A41;
+
+  /* Muted / Subtle */
+  --muted: #F1ECE3;
+  --muted-foreground: #5A6473;
+
+  /* Status Colors */
+  --success: #2A9D8F;
+  --success-foreground: #FFFFFF;
+  --warning: #F4A261;
+  --warning-foreground: #1B2A41;
+  --destructive: #D7263D;
+  --destructive-foreground: #FFFFFF;
+  --info: #3D5A80;
+  --info-foreground: #FFFFFF;
+
+  /* Order Status Colors */
+  --status-free: #94A3B8;
+  --status-seated: #3D5A80;
+  --status-ordered: #F4A261;
+  --status-ready: #2A9D8F;
+  --status-bill: #D7263D;
+
+  /* UI Elements */
+  --border: #E5E0D6;
+  --input: #E5E0D6;
+  --input-background: #FFFFFF;
+  --ring: #D7263D;
+  --switch-background: #E5E0D6;
+
+  /* Text Colors */
+  --text-primary: #1B2A41;
+  --text-secondary: #5A6473;
+  --text-disabled: #A8AEB8;
+
+  /* Font Weights */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Border Radius */
+  --radius: 0.5rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+
+  /* Charts */
+  --chart-1: #D7263D;
+  --chart-2: #F4A261;
+  --chart-3: #2A9D8F;
+  --chart-4: #3D5A80;
+  --chart-5: #1B2A41;
+
+  /* Sidebar */
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #1B2A41;
+  --sidebar-primary: #D7263D;
+  --sidebar-primary-foreground: #FAF7F2;
+  --sidebar-accent: #F1ECE3;
+  --sidebar-accent-foreground: #1B2A41;
+  --sidebar-border: #E5E0D6;
+  --sidebar-ring: #D7263D;
+}
+
+.dark {
+  /* Dark Mode - Primarily for Kitchen Display */
+  --background: #0F1721;
+  --foreground: #F1F5F9;
+  --card: #1B2A41;
+  --card-foreground: #F1F5F9;
+  --popover: #1B2A41;
+  --popover-foreground: #F1F5F9;
+  --primary: #D7263D;
+  --primary-foreground: #F1F5F9;
+  --secondary: #243447;
+  --secondary-foreground: #F1F5F9;
+  --muted: #243447;
+  --muted-foreground: #94A3B8;
+  --accent: #F4A261;
+  --accent-foreground: #0F1721;
+  --border: #243447;
+  --input: #243447;
+  --ring: #D7263D;
+  --text-primary: #F1F5F9;
+  --text-secondary: #94A3B8;
+  --text-disabled: #475569;
+  --sidebar: #1B2A41;
+  --sidebar-foreground: #F1F5F9;
+  --sidebar-primary: #D7263D;
+  --sidebar-primary-foreground: #F1F5F9;
+  --sidebar-accent: #243447;
+  --sidebar-accent-foreground: #F1F5F9;
+  --sidebar-border: #243447;
+  --sidebar-ring: #D7263D;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-info: var(--info);
+  --color-info-foreground: var(--info-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-status-free: var(--status-free);
+  --color-status-seated: var(--status-seated);
+  --color-status-ordered: var(--status-ordered);
+  --color-status-ready: var(--status-ready);
+  --color-status-bill: var(--status-bill);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /**
+  * Default typography styles for HTML elements (h1-h4, p, label, button, input).
+  * These are in @layer base, so Tailwind utility classes (like text-sm, text-lg) automatically override them.
+  */
+
+  html {
+    font-size: 16px;
+  }
+
+  html.text-small {
+    font-size: 14px;
+  }
+
+  html.text-large {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h3 {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  h4 {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  label {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  button {
+    font-weight: var(--font-weight-medium);
+    line-height: 1.5;
+  }
+
+  input {
+    font-weight: var(--font-weight-normal);
+    line-height: 1.5;
+  }
+}
